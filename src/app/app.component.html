@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  
+  <mat-form-field appearance="fill">
+    <mat-label>Select Solution</mat-label>
+    <select matNativeControl [(ngModel)]="selectedProvider" name="solutionList" (ngModelChange)="onSelectionChange($event)">
+      <option value="" selected></option>
+      <option *ngFor="let provider of providerList" [value]="provider">
+        {{provider}}
+      </option>
+    </select>
+  </mat-form-field>
+  </div>
+<router-outlet></router-outlet>

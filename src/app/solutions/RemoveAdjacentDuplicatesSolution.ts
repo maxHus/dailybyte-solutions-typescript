@@ -21,7 +21,7 @@ export class RemoveAdjacentDuplicatesSolution implements ISolution {
   }
   //#endregion SolutionOne
 
-  Main() {
-    console.log(this.SolutionOne("abccba".split('')));
+  Main() : void {
+    console.log(this.SolutionOne("foobar".split('')));
   }
 }

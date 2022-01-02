@@ -10,9 +10,9 @@ export class MovingAverageSolution implements ISolution {
   //#region SolutionOne
   Data: any = [];
 
-  index: number = 0;
+  index: number;
 
-  CurrentMovingAverage: number = 0;
+  CurrentMovingAverage: number ;
 
   SolutionOne(value: number): number {
     // TODO: initialize your MovingAverage.
@@ -24,9 +24,9 @@ export class MovingAverageSolution implements ISolution {
     this.CurrentMovingAverage = sumOfData / this.Data.length;
     return Math.ceil(this.CurrentMovingAverage);
   }
-  //#endregion olutionOne
+  //#endregion SolutionOne
 
-  Main() {
+  Main() : void{
     const mAvg: MovingAverageSolution = new MovingAverageSolution(3);
 
     console.log(mAvg.SolutionOne(3));

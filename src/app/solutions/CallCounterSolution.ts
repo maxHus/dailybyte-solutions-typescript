@@ -23,7 +23,7 @@ export class CallCounterSolution implements ISolution {
     }
     //#endregion SolutionOne
 
-    Main() {
+    Main() : void {
         console.log(this.SolutionOne(1));
         console.log(this.SolutionOne(300));
         console.log(this.SolutionOne(3000));
